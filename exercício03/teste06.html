@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de pet</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de pet</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Insira a data de nascimento <input type="text" name="txtano" id="txtano">
+            </p>
+            <p>
+                <input type="radio" name="radraca" id="gat">
+                <label for="gat">gato</label>
+                <input type="radio" name="radraca" id="cac">
+                <label for="cac">cachorro</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            O resultado aparecerá aqui
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Animal Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

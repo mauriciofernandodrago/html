@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Raça</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificação de raça</h1>
+    </header>
+    <section>
+        <div>
+            <p>Data de Nascimento <input type="text" name="txtano" id="txtano"></p>
+            <p>
+                <input type="radio" name="radraca" id="gat">
+                <label for="gat">Gato</label>
+                <input type="radio" name="radraca" id="cao">
+                <label for="cao">Cachorro</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            A resposta aparece aqui
+        </div>
+    </section>
+    <footer>
+        <p>&copy;animal company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

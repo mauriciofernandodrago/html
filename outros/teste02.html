@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: repeat(2,2fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+<div>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+</div>
+    <div id="res">resultado</div>
+<script>
+    var tx01 = window.document.getElementById('txtn1')
+    var tx02 = window.document.getElementById('txtn2')
+    var res = window.document.getElementById('res')
+    function somar(){
+        var n01 = Number(tx01.value)
+        var n02 = Number(tx02.value)
+        var s = n01 + n02
+        res.innerHTML = s
+    }
+    function multiplicar(){
+        var n01 = Number(tx01.value)
+        var n02 = Number(tx02.value)
+        var s = n01 * n02
+        res.innerHTML = s
+    }
+</script>
+</body>
+</html>

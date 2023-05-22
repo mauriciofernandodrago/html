@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste do aluno</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows:  repeat(2,2fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste do aluno</h1>
+    <div>
+    Insira seu nome<input type="text" name="nome" id="nome">
+    Insira sua materia <input type="text" name="materia" id="materia">
+    Insira sua nota 1º bim<input type="number" name="nota01" id="nota01" min="0" max="100">
+    Insira sua nota 2º bim<input type="number" name="nota02" id="nota02" min="0" max="100"> 
+    Insira sua nota 3º bim<input type="number" name="nota03" id="nota03" min="0" max="100"> 
+    Insira sua nota 4º bim<input type="number" name="nota04" id="nota04" min="0" max="100"> 
+    <input type="button" value="Resultado" onclick="calcular()">
+    <div id="Result">Resultado:</div>
+    </div>
+    <script>
+        var res = window.document.getElementById('Result')
+        function calcular(){
+            var txtn1 = window.document.getElementById('nota01')
+            var txtn2 = window.document.getElementById('nota02')
+            var txtn3 = window.document.getElementById('nota03')
+            var txtn4 = window.document.getElementById('nota04')
+            var nome = window.document.getElementById('nome')
+            var materia = window.document.getElementById('materia')
+            if (txtn1.value > 100 || txtn1.value <0 || txtn2.value > 100 || txtn2.value <0 || txtn3.value > 100 || txtn3.value <0 || txtn4.value > 100 || txtn4.value <0 ){
+                
+                alert('insira notas entre 0 e 100')
+            }else{
+
+                var media = (Number(txtn1.value)+Number(txtn2.value)+Number(txtn3.value)+Number(txtn4.value))/4
+                if (media < 70){
+                    res.innerHTML = (` ${nome.value}, a sua média em ${materia.value} é ${media}`)
+                    res.innerHTML += ('<p>você foi reprovado!')
+                    res.style.background = 'red'
+                    }else{
+                    res.innerHTML = (` ${nome.value}, a sua média em ${materia.value} é ${media}`)
+                    res.innerHTML += ('<p>você foi aprovado!</p>')
+                    res.style.background = 'green'
+            }
+
+            }
+
+            
+        
+
+        }
+    </script>
+</body>
+</html>

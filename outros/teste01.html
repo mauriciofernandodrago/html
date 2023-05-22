@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(150,150,150);
+        }
+        .organizador{
+            display: grid;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(4,100px);
+            gap: 10px;
+
+        }
+        
+        div{
+            color: rgb(185, 161, 115);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            background: rgb(79, 94, 180);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="organizador" onmouseenter="mouseentra()" onmouseleave="mousesai()">
+        <div id="botão01">
+            01
+        </div>
+        <div id="botão02">
+            02
+        </div>
+        <div id="botão03">
+            03
+        </div>
+        <div id="botãobackspace">
+            Backspace
+        </div>
+        <div id="botão04">
+            04
+        </div>
+        <div id="botão05">
+            05
+        </div>
+        <div id="botão06">
+            06
+        </div>
+        <div id="botãomultiplicação">
+            *
+        </div>
+        <div id="botão07">
+            07
+        </div>
+        <div id="botão08">
+            08
+        </div>
+        <div id="botão09">
+            09
+        </div>
+        <div id="botãosoma">
+            +
+        </div>
+        <div id="botãosubtração">
+            -
+        </div>
+        <div id="botãodivisão">
+            /
+        </div>
+        <div id="botãolimpar">
+            c
+        </div>
+        <div id="botãoresultado">
+            =
+        </div>
+    </div>
+    <script>
+        var butt = window.document.querySelector('.organizador')
+        function mouseentra(event){
+            butt.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
