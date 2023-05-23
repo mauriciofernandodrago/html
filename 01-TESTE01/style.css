@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@font-face {
+    font-family: 'blazed';
+    src: url('Blazed.ttf') format('truetype')
+
+}
+
+*{
+    font-family: 'Vina Sans', cursive;
+    /*height: 100%;*/
+}
+body{
+    background-image: linear-gradient(to right,#506266,#A3AB78);
+    font-size: 1em;
+    
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
+}
+h1{
+    font-family: 'blazed';
+    color:#10454F; 
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.493);
+}
+h2{
+    color: #506266;
+    text-align: right;
+    text-indent: 20px;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}

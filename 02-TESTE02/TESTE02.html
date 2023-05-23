@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a{
+            color: red;
+            text-decoration: none;
+
+        }
+
+        a:visited{
+            color: rgb(65, 110, 110);
+        }
+        a:hover{
+            text-decoration:line-through;
+            background-color: blanchedalmond;
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+        a::after{
+            content: ' [link]';
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p><a href="https://g1.globo.com/" target="_blank">link 01</a></p>
+    <p><a href="https://g1.globo.com/"target="_blank">link 02</a></p>
+    <p><a href="https://g1.globo.com/"target="_blank">link 03</a></p>
+    
+</body>
+</html>
