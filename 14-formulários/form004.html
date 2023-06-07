@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulários</title>
+    <style>
+        select{
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <h1>exemplo de formulário</h1>
@@ -21,13 +26,38 @@
         </p>
         <p>
             <label for="ifoto">Foto do perfil</label>
-            <input type="range" name="satis" id="isatis" >
+            <input type="file" name="foto" id="ifoto">
             
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="Rio de janeiro">Minas gerais</option>
+                <option value="Rio de janeiro">espírito santo</option>
+                <option value="Rio de janeiro">caraguatatuba</option>
+                <option value="Rio de janeiro">nordete</option>
+                <option value="Rio de janeiro">lua</option>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">administrador</option>
+                <option value="ARQ">arquiteto</option>
+                <option value="ENG">engenheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="texto">blabla</label><br>
+            <textarea name="texto" id="texto" cols="30" rows="10">digite</textarea>
+        </p>
+
+
     </form>
 </body>
 </html>
