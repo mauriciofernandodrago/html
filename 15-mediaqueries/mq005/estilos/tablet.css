@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+main{
+    max-width: 600px;
+}
+span#burguer{
+    display: none;
+}
+nav#menu{
+    display: block;
+}
+li{
+    display: inline-block;
+}
